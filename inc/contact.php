@@ -45,15 +45,18 @@
                     </ul>
                 </div>
                 <div class="six columns">
-                    <form class="contact-form" action="index.html" method="GET">
+                    <?php if (isset($_GET['contacted'])): ?>
+                        <p id="contact-success">Das Formular wurde erfolgreich verschickt.</p>
+                        <?php endif; ?>
+                    <form class="contact-form" action="form.php" method="POST">
                         <label for="contact-name" class="contact-label">Your Name *</label>
-                        <input id="contact-name" class="contact-input" type="text" placeholder="Your Name *" required />
+                        <input name="name" id="contact-name" class="contact-input" type="text" placeholder="Your Name *" required />
 
                         <label for="contact-email" class="contact-label">Your Email *</label>
-                        <input id="contact-email" class="contact-input" type="text" placeholder="Your Email *" required />
+                        <input name="email" id="contact-email" class="contact-input" type="text" placeholder="Your Email *" required />
 
                         <label for="contact-message" class="contact-label">Your message</label>
-                        <textarea id="contact-message" class="contact-input contact-message" placeholder="Your message *"
+                        <textarea name="message" id="contact-message" class="contact-input contact-message" placeholder="Your message *"
                             required="required"></textarea>
 
                         <input class="contact-submit" type="submit" value="Submit Message" />
