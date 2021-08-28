@@ -1,0 +1,118 @@
+/*
+* Clients-Bereich
+*/
+.clients {
+    padding-top: $langing-padding;
+    padding-bottom: $langing-padding - 40px;
+    background-color: #fafafa;
+}
+
+.clients-heading {
+    font-weight: lighter;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.clients-subheading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.client-quote {
+    border: 2px solid #f3f3f3;
+    background-color: white;
+    padding: 25px 25px 25px 25px;
+    border-radius: 3px;
+    font-size: 150%;
+    font-weight: lighter;
+    font-style: italic;
+    position: relative;
+
+    @media ($bp-larger-than-phablet) {
+        padding: 55px 75px 65px 75px;
+    }
+
+    p {
+        margin-bottom: 0px;
+    }
+}
+
+.client-quote-author {
+    font-style: normal;
+    font-size: 70%;
+    color: #7185c4;
+    margin-top: 20px;
+}
+@media ($bp-larger-than-phablet) {
+    .client-quote::before,
+    .client-quote::after {
+        content: "";
+        display: block;
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        top: 50%;
+    }
+
+    .client-quote::before {
+        left: -30px;
+        margin-top: -15px;
+        border: 15px solid transparent;
+        border-right: 15px solid #f3f3f3;
+    }
+
+    .client-quote::after {
+        left: -26px;
+        margin-top: -13px;
+        border: 13px solid transparent;
+        border-right: 13px solid white;
+    }
+
+    .client-quote-left::before {
+        right: -30px;
+        left: auto;
+        margin-top: -15px;
+        border: 15px solid transparent;
+        border-left: 15px solid #f3f3f3;
+    }
+
+    .client-quote-left::after {
+        right: -26px;
+        left: auto;
+        margin-top: -13px;
+        border: 13px solid transparent;
+        border-left: 13px solid white;
+    }
+}
+
+.row {
+    margin-bottom: 40px;
+}
+
+.client-image {
+    display: none;
+
+    @media ($bp-larger-than-phablet) {
+        display: block;
+        margin-top: 150px;
+    }
+    @media ($bp-larger-than-tablet) {
+        margin-top: 75px;
+    }
+    @media ($bp-larger-than-desktop) {
+        margin-top: 10px;
+    }
+    @media ($bp-larger-than-desktophd) {
+        margin-top: 0px;
+    }
+}
+
+.client-quote-image {
+    width: 40px;
+    float: left;
+    margin-top: -12px;
+
+    @media ($bp-larger-than-phablet) {
+        display: none;
+    }
+}

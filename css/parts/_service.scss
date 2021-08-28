@@ -1,0 +1,35 @@
+/*
+* Service-Bereich
+*/
+.service {
+    padding-top: $langing-padding;
+    padding-bottom: $langing-padding - 25px;
+}
+
+.service-gray {
+    background-color: #fafafa;
+}
+
+.service-title {
+    font-weight: lighter;
+    color: #1c1c1c;
+}
+
+.service-icon {
+    color: #e0e0e0;
+    font-size: 700%;
+    text-align: center;
+    margin-top: -20%;
+    margin-bottom: -20%;
+    display: none;
+
+    @media ($bp-larger-than-phablet) {
+        display: block;
+    }
+    @media ($bp-larger-than-tablet) {
+        font-size: 1000%;
+    }
+    @media ($bp-larger-than-desktop) {
+        font-size: 1500%;
+    }
+}

@@ -1,0 +1,89 @@
+/*
+* Kontakt-Bereich
+*/
+.contact {
+    padding-top: $langing-padding;
+    padding-bottom: $langing-padding - 40px;
+    background-color: #768fc5;
+    color: white;
+}
+
+.contact-heading {
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.contact-subheading {
+    color: white;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.contact-methods {
+    color: white;
+    list-style-type: none;
+
+    li {
+        width: 50%;
+        float: left;
+        font-weight: lighter;
+        height: 2.5em;
+
+        @media ($bp-larger-than-phablet) {
+            width: 100%;
+            float: none;
+        }
+        @media ($bp-larger-than-desktop) {
+            width: 50%;
+            float: left;
+        }
+    }
+
+    li .fas,
+    .fab {
+        font-size: 150%;
+    }
+}
+
+.contact-icon {
+    display: inline-block;
+    width: 33px;
+    text-align: center;
+}
+
+.contact-input {
+    width: 100%;
+    margin-bottom: 28px;
+    color: black;
+
+    &:hover {
+        background-color: rgb(243, 229, 229);
+        transition: all 0.5s;
+    }
+
+    &:focus {
+        background-color: rgb(223, 217, 217);
+        border: 1px solid rgb(0, 0, 0);
+    }
+}
+
+.contact-message {
+    height: 140px;
+}
+
+input.contact-submit[type="submit"] {
+    background-color: white;
+    margin-bottom: 0px;
+}
+
+.contact-form {
+    margin-bottom: 0px;
+}
+
+.contact-label {
+    display: none;
+}
+.no-placeholder .contact-label {
+    display: block;
+}
+

@@ -1,0 +1,417 @@
+body {
+    font-family: "Mulish", sans-serif;
+}
+p {
+    color: #727272;
+}
+
+.circle-image {
+    width: 100%;
+    border-radius: 10000px;
+    border: 5px solid white;
+}
+
+/*
+* Header-Bereich
+*/
+.header {
+    height: 620px;
+    background-image: url("../img/header-background-edited.jpg");
+    background-size: cover;
+    background-position: 50% 45%;
+}
+
+.header-navbar-links {
+    color: white;
+    float: right;
+    margin-top: 50px;
+}
+
+.header-navbar-links li {
+    float: left;
+    list-style-type: none;
+    margin-left: 26px;
+    text-shadow: 0px 0px 2px black;
+}
+
+.header-navbar-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-navbar-links a:hover {
+    color: gray;
+    text-decoration: underline;
+    transition: all 0.5s;
+}
+
+.header-brand-wrapper {
+    margin-top: 50px;
+    float: left;
+}
+
+.header-brand {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 150%;
+    margin-top: -9px;
+    display: block;
+    text-shadow: 0px 0px 2px black;
+}
+
+.slogan {
+    padding-top: 110px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: 0px 0px 2px black;
+}
+
+.slogan-top {
+    font-size: 170%;
+    font-weight: lighter;
+}
+
+.slogan-bottom {
+    font-size: 250%;
+    font-weight: bold;
+    /*text-transform: uppercase;*/
+}
+
+.slogan-button {
+    margin-top: 60px;
+    color: white;
+    text-shadow: 0px 0px 2px black;
+}
+
+.slogan-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.slogan-button:hover {
+    color: white;
+    text-shadow: 0px 0px 2px black;
+}
+
+/*
+* Service-Bereich
+*/
+.service {
+    padding-top: 100px;
+    padding-bottom: 75px;
+}
+
+.service-gray {
+    background-color: #fafafa;
+}
+
+.service-title {
+    font-weight: lighter;
+    color: #1c1c1c;
+}
+
+.service-icon {
+    color: #e0e0e0;
+    font-size: 1500%;
+    text-align: center;
+    margin-top: -20%;
+    margin-bottom: -20%;
+}
+
+/*
+* Features-Bereich
+*/
+.features {
+    padding-top: 100px;
+    padding-bottom: 75px;
+}
+
+.feature-icon {
+    width: 70px;
+    height: 67px;
+    padding-top: 3px;
+    background-color: #1c1c1c;
+    border-radius: 35px;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    float: left;
+    transition: all 1s;
+}
+.feature-icon:hover {
+    transform: rotate(360deg);
+}
+
+.feature-text {
+    margin-left: 80px;
+}
+.feature-text h5 {
+    margin-bottom: 5px;
+    font-size: 110%;
+    color: #1c1c1c;
+}
+
+/*
+* Clients-Bereich
+*/
+.clients {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    background-color: #fafafa;
+}
+
+.clients-heading {
+    font-weight: lighter;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.clients-subheading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.client-quote {
+    border: 2px solid #f3f3f3;
+    background-color: white;
+    padding: 55px 75px 65px 75px;
+    border-radius: 3px;
+    font-size: 150%;
+    font-weight: lighter;
+    font-style: italic;
+    position: relative;
+}
+
+.client-quote p {
+    margin-bottom: 0px;
+}
+
+.client-quote-author {
+    font-style: normal;
+    font-size: 60%;
+    color: #7185c4;
+}
+
+.client-quote::before,
+.client-quote::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 50%;
+}
+
+.client-quote::before {
+    left: -30px;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-right: 15px solid #f3f3f3;
+}
+
+.client-quote::after {
+    left: -26px;
+    margin-top: -13px;
+    border: 13px solid transparent;
+    border-right: 13px solid white;
+}
+
+.client-quote-left::before {
+    right: -30px;
+    left: auto;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-left: 15px solid #f3f3f3;
+}
+
+.client-quote-left::after {
+    right: -26px;
+    left: auto;
+    margin-top: -13px;
+    border: 13px solid transparent;
+    border-left: 13px solid white;
+}
+
+.row {
+    margin-bottom: 40px;
+}
+
+/*
+* Logo-Bereich
+*/
+.html-logo {
+    width: 50px;
+    padding-left: 47%;
+    padding-top: 30px;
+}
+.css-logo {
+    width: 50px;
+}
+
+/*
+* Team-Bereich
+*/
+.teams {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #111111;
+    color: white;
+}
+
+.teams-heading {
+    font-weight: lighter;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.teams-subheading {
+    color: #7b7b7b;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.team-image {
+    max-width: 70%;
+}
+
+.team-image-container {
+    text-align: center;
+}
+
+.team-name {
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.team-name-desc {
+    font-size: 11px;
+    font-weight: lighter;
+    text-align: center;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.team-icons {
+    text-align: center;
+}
+
+.team-icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    color: white;
+    border: 3px solid white;
+    text-align: center;
+    border-radius: 10000px;
+}
+
+.team-icon .fab {
+    margin-top: 5px;
+    font-size: 100%;
+}
+
+.supported {
+    text-align: center;
+    margin-bottom: 0px;
+    color: white;
+    font-weight: lighter;
+}
+
+/*
+* Kontakt-Bereich
+*/
+.contact {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    background-color: #768fc5;
+    color: white;
+}
+
+.contact-heading {
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.contact-subheading {
+    color: white;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.contact-methods {
+    color: white;
+    list-style-type: none;
+}
+.contact-methods li {
+    width: 50%;
+    float: left;
+    font-weight: lighter;
+    height: 2.5em;
+}
+
+.contact-methods li .fas,
+.fab {
+    font-size: 150%;
+}
+
+.contact-icon {
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+}
+
+.contact-input {
+    width: 100%;
+    margin-bottom: 28px;
+    color: black;
+}
+
+.contact-input:hover {
+    background-color: rgb(243, 229, 229);
+    transition: all 0.5s;
+}
+
+.contact-input:focus,
+input.contact-input:focus {
+    background-color: rgb(223, 217, 217);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.contact-message {
+    height: 140px;
+}
+
+input.contact-submit[type="submit"] {
+    background-color: white;
+    margin-bottom: 0px;
+}
+
+.contact-form {
+    margin-bottom: 0px;
+}
+
+/*
+* Footer-Bereich
+*/
+.footer {
+    background-color: #768fc5;
+    text-align: center;
+    font-weight: lighter;
+}
+.footer p {
+    color: white;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-hr {
+    margin-top: 0px;
+    margin-bottom: 25px;
+}

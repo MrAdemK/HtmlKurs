@@ -1,0 +1,25 @@
+.side-menu {
+    background-color: $light-grey;
+    padding-top: 15px;
+
+    h3 {
+        padding-left: 15px;
+    }
+}
+
+.side-menu-navigation {
+    list-style-type: none;
+    border-bottom: 1px solid $border-color;
+
+    li {
+        border-top: 1px solid $border-color;
+        margin-bottom: 0px;
+    }
+
+    a {
+        display: block;
+        padding: 10px 0px 10px 15px;
+        text-decoration: none;
+        color: $font-color;
+    }
+}
